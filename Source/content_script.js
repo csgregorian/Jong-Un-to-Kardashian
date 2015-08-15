@@ -31,8 +31,10 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bForce\b/g, "Horse");
-	v = v.replace(/\bforce\b/g, "horse");
+	v = v.replace(/\bJong Un\b/g, "Kardashian");
+	v = v.replace(/\JongUn\b/g, "Kardashian");
+	v = v.replace(/\Jong-Un\b/g, "Kardashian");
+	v = v.replace(/\Jong-un\b/g, "Kardashian");
 	
 	textNode.nodeValue = v;
 }
